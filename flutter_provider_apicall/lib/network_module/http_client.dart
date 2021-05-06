@@ -35,6 +35,17 @@ class HttpClient {
   }
 
   Future<dynamic> postData(String url, dynamic body) async {
+
+    // dynamic body = """{
+    //   "FirstName":"",
+    //   "LastName":"",
+    //   "PhoneNumber":"",
+    //   "Password":""
+    // }""";
+    // Map<String, String> header= {
+    //   "Content-Type":"application/json",
+    //   "Authorization": "Bearer $token",
+    // };
     var responseJson;
     var header = {HttpHeaders.contentTypeHeader: 'application/json'};
     try {
